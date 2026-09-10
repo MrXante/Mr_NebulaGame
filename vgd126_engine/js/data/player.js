@@ -11,26 +11,29 @@
    ===================================================================== */
 var playerData = {
   info: {
-    src: `images/snale.png` // ← replace with your asset, e.g., 'images/hero.png'
+    src: `images/MR_Nebula_Spritesheet.png` // ← replace with your asset, e.g., 'images/hero.png'
   },
   states: {
     // idle
     idle: {
       fps: 15, cycle: true,
       frames: [
-        { width: 128, height: 128, startX: 0,   startY: 0 },
-        { width: 128, height: 128, startX: 128, startY: 0 }
+        { width: 64, height: 64, startX: 0,   startY: 0 },
+        { width: 64, height: 64, startX: 128, startY: 0 }
       ]
     },
     // walk
     walk: {
-      fps: 1, cycle: true,
+      fps: 4, cycle: true,
       frames: [
-        { width: 128, height: 128, startX: 0,   startY: 0 },
-        { width: 128, height: 128, startX: 128, startY: 0 },
-        { width: 128, height: 128, startX: 256, startY: 0 },
-        { width: 128, height: 128, startX: 384, startY: 0 },
-        { width: 128, height: 128, startX: 512, startY: 0 }
+        { width: 64, height: 64, startX: 0,   startY: 64 },
+        { width: 64, height: 64, startX: 64, startY: 64 },
+        { width: 64, height: 64, startX: 128, startY: 64 },
+        { width: 64, height: 64, startX: 192, startY: 64 },
+        { width: 64, height: 64, startX: 257, startY: 64 },
+        { width: 64, height: 64, startX: 320, startY: 64 },
+        { width: 64, height: 64, startX: 384, startY: 64 },
+        { width: 64, height: 64, startX: 448, startY: 64 }
       ]
     },
     // jump
