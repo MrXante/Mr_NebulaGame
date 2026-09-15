@@ -85,7 +85,7 @@ var currentBullet = 0;
 for (let i = 0; i < 100; i++) {
   bullets[i] = new GameObject({ width: 64, height: 64 }).makeSprite(playerData);
   bullets[i].y = -10000;
-  bullets[i].changeState(`walk`);
+  bullets[i].changeState(`magic`);
 }
 
 gameStates[`level1`] = function () {
@@ -108,7 +108,7 @@ gameStates[`level1`] = function () {
   }
   if (keys[`W`] && wiz.canJump) {
     wiz.canJump = false; wiz.vy = wiz.jumpHeight; wiz.changeState(`jump`);
-    // sounds.play(`splode`,1)
+   sounds.play('Leap',0);
   }
 
   // Shooting cadence
@@ -117,6 +117,7 @@ gameStates[`level1`] = function () {
   if (keys[` `]) {
     if (canShoot) {
       wiz.changeState(`attack`);
+      sounds.play('Shoot',0);
       shotTimer = shotDelay;
       bullets[currentBullet].vx = 5 * wiz.dir;
       bullets[currentBullet].world = level;

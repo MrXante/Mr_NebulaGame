@@ -20,6 +20,7 @@ var timer = setInterval(animate, interval);
    You can start directly in "level1" while iterating on art.
    ===================================================================== */
 gameStates.changeState(`menu`);
+sounds.play(`Game-BGM"`, 0);
 
 //-------------------------Animation Loop--------------------------------
 /**

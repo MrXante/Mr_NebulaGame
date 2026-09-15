@@ -56,6 +56,15 @@ var playerData = {
         { width: 64, height: 64, startX: 128, startY: 128 },
         { width: 64, height: 64, startX: 128, startY: 128 }
       ]
+    },
+    //projectile
+    magic: {
+      fps: 8, cycle: true,
+      frames: [
+        { width: 64, height: 64, startX: 192,   startY: 128 },
+        { width: 64, height: 64, startX: 256, startY: 128 }
+      ]
     }
   }
-}
+};
+
