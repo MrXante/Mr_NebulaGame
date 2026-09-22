@@ -25,7 +25,7 @@ var ground = new GameObject({ width: canvas.width * 10, x: canvas.width * 10 / 2
    - Swap "images/ground.png" with your tile/gravel/etc.
    - Tileable images look best here (seamless repeat).
    ===================================================================== */
-ground.img.src = `images/ground.png`;
+ground.img.src = `images/Ground-TileSet.png`;
 
 // Simple platform
 var plat = new GameObject({ width: 256, height: 64, y: canvas.height - 200, color: "green", world: level });
@@ -59,14 +59,14 @@ var sky = new GameObject({ width: canvas.width, height: canvas.height });
    ✏️ STUDENT EDIT ZONE: SKY BACKDROP
    Swap the image used for the sky pattern (large, subtle textures work well).
    ===================================================================== */
-sky.img.src = `images/sky.png`;
+sky.img.src = `images/skyBackGround-P.png`;
 
 var rbg = new GameObject({ x: level.x, y: level.y, width: 1024, height: 512 });
 /* =====================================================================
    ✏️ STUDENT EDIT ZONE: REPEATING BACKGROUND LAYER
    Recommended: tileable hill/forest layer that repeats horizontally.
    ===================================================================== */
-rbg.img.src = `images/hills.png`;
+rbg.img.src = `images/CloseBackground-P.png`;
 
 var bg = new GameObject({ x: level.x, y: level.y, width: canvas.width * 4, height: canvas.height });
 /* =====================================================================
