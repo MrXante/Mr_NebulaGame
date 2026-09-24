@@ -13,7 +13,7 @@ var menuBackground = new GameObject();
    ✏️ STUDENT EDIT ZONE: MENU BACKGROUND IMAGE
    Replace with your own JPG/PNG; keep aspect ratio close to canvas.
    ===================================================================== */
-menuBackground.img.src = "images/mrt.jpg";
+menuBackground.img.src = "images/Menu Background_Edit-p.png";
 menuBackground.width = canvas.width;
 menuBackground.height = canvas.height;
 
@@ -22,9 +22,9 @@ gameStates[`menu`] = function () {
   if (startButton.overlap(mouse)) {
     if (mouse.pressed) { gameStates.changeState(`level1`); 
       sounds.play(`Game-BGM`, 0, loop = true); }
-    startButton.color = `yellow`;
+    startButton.img.src = "images/Menu-Button1.png";
   } else {
-    startButton.color = `red`;
+    startButton.img.src = "images/Menu-Button2.png";
   }
 
   menuBackground.drawStaticImage();
